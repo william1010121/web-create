@@ -1,20 +1,48 @@
+:root {
+    --block_radius: 20px;
+    --tab-width: 4ex;
+    --count-time: 0;
+}
+body {
+    background-color: rgb(215, 237, 255);
+    opacity: 90%;
+}
 header {
     display: flex;
     justify-content: space-around;
     padding: 10px 10px 20px 20px;
     font-size: 40px;  
     border: 3px solid red;  
-    border-radius: 20%;
+    border-radius: var(--block_radius);
     background-color: aqua;
 }
 #col-mid {
+    background-color: rgb(55, 55, 236);
+    opacity: 70%;
+    border-radius: var(--block_radius);
     display: flex;
-    border: 2px solid purple;
     padding: 20px 20px 20px 20px;
+    justify-content: space-around;
 }
 nav span {
     width: auto;
     display: flex;
     justify-content: center;
-    border: 2px dashed green;
+    color: white;
+    text-transform: inherit;
+}
+
+aside {
+    background-color: blue;
+    width: auto;
+    text-align: center;
+    color: white;
+}
+main p~ol {
+    border: 3px dashed green;
+    margin-left: var(--tab-width);
+}
+main ol li {
+    display: inline-block;
+    border: 2px solid red;
 }

@@ -3,12 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title> 346</title>
-    <link rel="stylesheet" href="../css/home.css">
-
+    <link rel="stylesheet" href="../css/home.css"/>
 </head>
 
-<body>
-    <header>346 班級網頁</header>
+<body onload="init()">
+    <header id="mytitle">346 班級網頁</header>
 
     <nav id="col-mid"> 
         <span>聯絡簿</span>
@@ -19,9 +18,24 @@
     <aside> today is : <time> 2022/3/9</time> </aside>
 
     <main>
-        <p>今日聯絡簿</p>
+        <p>今日聯絡簿</p> 
+        <ol id = "today_list"> 
+            <li>first</li>
+            <li>second</li>
+            <li>third</li>
+            <li> fourth</li>
+            <li> fifth</li>
+            <li> six</li>
+        </ol>
     </main>
 
-    <footer><p>power by 34609 郭勝威</p></footer>
+    <article id = "my_article"></article>
+    <textarea  name="mytext" wrap="virtual">
+        
+    </textarea>
+    <button id="input_end">submit</button>
+
+    <footer><p>power by 郭勝威</p></footer>
 </body>
+    <script type="text/javascript" src="../java/home.js"></script>
 </html>
