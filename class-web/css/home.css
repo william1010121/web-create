@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px 20px 20px;
+    font-size: 40px;  
+    border: 3px solid red;  
+    border-radius: 20%;
+    background-color: aqua;
+}
+#col-mid {
+    display: flex;
+    border: 2px solid purple;
+    padding: 20px 20px 20px 20px;
+}
+nav span {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    border: 2px dashed green;
+}
