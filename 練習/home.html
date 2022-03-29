@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>My website</title>
+
+    <script>
+        function click_count()  {
+            var cnt = 0;
+            return function() { return ++cnt;}
+        }
+        function init() {
+        }
+        /*
+        function save_txt(messenge = "") {
+            var txt = "";
+            return function() {txt += messenge; return txt;}
+        }
+        function init() {
+            alert('start')
+            var form = document.getElementById("form");
+            var form_to_txt = save_txt("abcde");
+            console.log(form_to_txt)
+            
+            form.addEventListener('submit', (event) => {
+               alert(form_to_txt("", "query"));
+               var txt = document.getElementById("content");
+               var index = form.elements['my_password'];
+               alert(index.value)
+               form_to_txt(string(index.value));
+                alert("gogogogo")
+               txt.innerText = form_to_txt("", "query"); 
+                alert(form_to_txt("", "query"));
+                alert(txt.innerText);
+            })
+        }
+        function init() {
+            var form = document.getElementById("form")
+            console.log(form);
+            form.addEventListener('submit', (event) => {
+                var txt = document.getElementById("content").text;
+                alert("es")
+                var index = form.elements['my_password']
+                alert(index.value)
+                alert("no")
+            })    
+        }
+
+        function init() {
+            alert("start init")
+            var btn = document.getElementById("button");
+            var handle = function() {
+                var x = prompt("please input something");
+                var y = prompt("please input something");
+                alert(x * y);
+            }
+            btn.addEventListener("click", handle);
+            
+
+            var myhandle = function() {
+                console.log("absd")
+                alert("!!!!");
+               var ttl = document.getElementById("mytitle");
+               ttl.classList.toggle("title");
+               ttl.style.display("none");
+
+            }
+            document.addEventListener("keydown", myhandle);
+        }
+        */
+    </script>
+
+    <style type="text/css" >
+        .list{
+            width: 300px;
+            height: 300px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+
+            margin-top: 150px;
+            margin-left: -150px;
+
+            color:aqua;
+            font-size: 24px;
+            border-radius: 5%;
+            border-style: solid;
+            border-color: aquamarine;
+        
+        }
+
+        .content{
+
+            color: rgb(89, 111, 233); 
+            font-size: 20px;
+        }
+        .title{
+            width: auto;
+            color: red;
+            border: 1px solid blue ;
+            font-size: 30;
+        }
+        .hidden{
+            width: 0px;
+            height: 0px;
+            visibility: hidden;
+        }
+    </style>
+
+</head>
+
+<body onload="init();">
+
+    <div class="hidden">
+        <form name="my_form" id="form">
+            <input type="file" id="yourfile">
+            <input type="password" id="my_password">
+            <input type="submit" name="go">
+        </form>
+    </div>
+
+    <div class="list">
+        <ul>
+            <li> first</li>
+            <li> second </li>
+            <li> third</li>
+        </ul>
+    </div>
+
+    <button class="hidden" onclick="alert('abs')" id="button">Click</button>
+
+    <div class = "title" id="mytitle">
+        <p> I am william</p>
+    </div>
+    <div class = "content" id = 'content'>
+    pppppp
+    </div>
+</body>
+
+</html>
